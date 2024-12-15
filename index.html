@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dot to Dot</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <h1>Christmas Dot-to-Dot</h1>
+    <div id="dot-to-dot" class="dot-to-dot"></div>
+    <div id="puzzle-buttons" class="puzzle-buttons"></div>
+    <div class="controls">
+      <button
+        type="button"
+        id="btn-random"
+        aria-label="Random puzzle"
+        data-title="Random">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 4l3 3l-3 3" />
+          <path d="M18 20l3 -3l-3 -3" />
+          <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+          <path
+            d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+        </svg>
+      </button>
+      <button type="button" id="btn-undo" aria-label="Undo" data-title="Undo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M9 14l-4 -4l4 -4" />
+          <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+        </svg>
+      </button>
+      <button
+        type="button"
+        id="btn-reset"
+        arial-label="Restore"
+        data-title="Restore">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M3.06 13a9 9 0 1 0 .49 -4.087" />
+          <path d="M3 4.001v5h5" />
+          <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+        </svg>
+      </button>
+    </div>
+    <div id="message">Click on the dots to discover the picture.</div>
+  </body>
+</html>
